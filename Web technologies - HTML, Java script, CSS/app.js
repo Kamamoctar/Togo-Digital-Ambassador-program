@@ -1,3 +1,6 @@
+/* This JavaScript code snippet is adding event listeners to three different forms (Employee Form,
+Department Form, and Project Form) in an HTML document. The event listener is triggered when the DOM
+content is fully loaded (`DOMContentLoaded` event). */
 document.addEventListener('DOMContentLoaded', () => {
     // Employee Form Validation and Data Handling
     const employeeForm = document.getElementById('employeeForm');
@@ -51,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectForm = document.getElementById('projectForm');
     const projectTableBody = document.getElementById('projectTable').querySelector('tbody');
     
+  /* This part is handling form submission for the Project form. */
     projectForm.addEventListener('submit', (event) => {
         const projectName = document.getElementById('projectName').value.trim();
         const departmentId = document.getElementById('projectDepartmentId').value.trim();
